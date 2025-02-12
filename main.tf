@@ -1,5 +1,5 @@
 resource "aws_security_group" "main" {
-  name        = "allow_tls"
+  name        = local.sg_final_name
   description = var.sg_description
   vpc_id      = var.vpc_id
 
